@@ -10,7 +10,7 @@ app = Flask(__name__)
 api = Api(app)
 
 
-HOST = 'http://' + str(sys.argv[1])
+HOST = f'http://{sys.argv[1]}:5000'
 # HOST = "http://10.8.0.14:5000"
 
 class Tarefas(Resource):
